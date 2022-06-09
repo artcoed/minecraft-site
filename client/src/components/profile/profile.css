@@ -1,0 +1,121 @@
+.profile-page{
+    padding-top: 0.5em;
+    font-family: Jost;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #050505;
+}
+.h1-profile-text{
+    font-size: 3.5em;
+}
+.h1-profile-block{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #FFF;
+    color: #fff;
+}
+.logout-profile-block-btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-weight: 700;
+    padding-top: 1em;
+    border-top: 1px solid #FFF;
+}
+.logout-profile-text-btn{
+    font-size: 2em;
+    color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: 0.25s;
+}
+.logout-profile-text-btn:hover{
+    color: rgba(255,255,255,1);
+}
+.blocks-profile{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.texts-profile{
+    font-size: 2em;
+    background-color: #FFFFFF;
+    padding: 1em 2em;
+    border-radius: 0.4em;
+    font-weight: 500;
+    text-align: center;
+    min-width: 20vw;
+    width: 100%;
+}
+.profile-page-container{
+    display: grid;
+    grid-row-gap: 2em;
+    background-color: #050505;
+    padding: 1em 6em;
+    border-radius: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+.no-login{
+    height: 25vh;
+    min-height: 25vw;
+    background-color: #050505;
+    font-size: 3em;
+    font-weight: 600;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1920px) {
+    .profile-page{
+        font-size: 10.25px;
+    }
+}
+@media (max-width: 1440px) {
+    .profile-page{
+        font-size: 9.5px;
+    }
+}
+@media (max-width: 991px) {
+    .profile-page{
+        font-size: 8px;
+    }
+}
+@media (max-width: 767px) {
+    .profile-page{
+        font-size: 7.75px;
+    }
+}
+@media (max-width: 600px) {
+    .profile-page-container{
+        padding: 3em 4vw;
+    }
+    .texts-profile{
+        padding: 1em 3vw;
+    }
+    .profile-page{
+        padding: 0 2vw;
+    }
+}
+@media (max-width: 400px) {
+    .profile-page{
+        font-size: 7.5px;
+    }
+}
+@media (max-width: 350px) {
+    .profile-page{
+        font-size: 7px;
+    }
+    .profile-page-container{
+        padding: 3vw 1.5vw;
+    }
+}

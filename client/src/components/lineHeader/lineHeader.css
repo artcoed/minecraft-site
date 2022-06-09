@@ -1,0 +1,52 @@
+.line{
+    height: 5px;
+    background-color: #FF9A14;
+    width: 0%;
+
+}
+
+.page .line{
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+.page-enter .line{
+    opacity: 1;
+    animation: load 1s forwards;
+    display: block;
+}
+@keyframes load {
+    0%{
+        width: 0%;
+        display: block;
+        opacity: 0.4;
+        transform: translateX(0);
+    }
+    20%{
+        opacity: 0.65;
+    }
+    40%{
+        opacity: 0.85;
+    }
+    25%{
+        transform: translateX(10%);
+    }
+    80%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    99%{
+        width: 100%;
+        display: block;
+        transform: translateX(150%);
+        opacity: 1;
+    }
+    100%{
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+.modal-profile .nickname-container{
+    opacity: 0;
+    transition: 0.25s;
+    pointer-events: none;
+}
+.modal-profile.active-modal-profile .nickname-container{
+    opacity: 1;
+    pointer-events: all;
+}

@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+header{
+    background-color: #050505;
+    font-size: 1.3vw;
+    z-index: 10;
+}
+header a{
+    color: #ffffff!important;
+}
+.logo-text{
+    font-family: Secular One;
+    font-style: normal;
+    font-weight: normal;
+}
+.menu-text{
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 300;
+    transition: 0.25s;
+}
+
+.log-in-text{
+    text-transform: uppercase;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 600;
+}
+.container-header-elements{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em 7em;
+    align-items: center;
+    position: relative;
+}
+.nickname-container{
+    position: absolute;
+    right: 6.5em;
+    top: 3.3em;
+    font-family: Jost;
+    border-radius: 0.5em;
+    box-shadow: 0 0 75px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.all-nickname-container-block{
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-radius: 0.5em;
+    padding: 1em 1.75em;
+    padding-bottom: 0.5em;
+    display: grid;
+    grid-row-gap: 0.75em;
+}
+
+.nickname-btn-profile-text{
+    cursor: pointer;
+    font-size: 0.75em;
+    background-color: #FF9A14;
+    padding: 0.3em 1em;
+    border-radius: 0.4em;
+    transition: 0.25s;
+}
+.nickname-btn-profile-text:hover{
+    color: #FFF;
+    background-color: #FF8C00;
+    transform: scale(1.04);
+}
+.icon-svg-nickname{
+    position: absolute;
+    right: calc(0.5em + 42.5px);
+    top: -1.07em;
+    transform: rotate(180deg);
+}
+.icon-svg-nickname-image{
+    width: 1em;
+    height: 1em;
+    fill: #FFFFFF;
+}
+.menu-elemet{
+    z-index: 10;
+    display: flex;
+}
+.menu-image{
+    height: 1.15em;
+    width: 1.15em;
+    margin-right: 0.3em;
+}
+
+.menu-block{
+    margin: 0 1em;
+}
+.news-block{
+    margin-left: 0;
+}
+.rules-block{
+    margin-right: 0;
+}
+.link-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link-block:hover .menu-text{
+    color: #FF9A14;
+}
+.icons-heading{
+    fill: #FFFFFF;
+    transition: 0.25s;
+}
+.link-block:hover .icons-heading{
+    fill: #FF9A14;
+}
+.activeLink .icons-heading{
+    fill: #FF9A14;
+}
+.activeLink .menu-text{
+    color: #FF9A14;
+}
+.text-settings-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    transition: 0.25s;
+}
+.text-settings-block:hover{
+    color: #FF9A14;
+}
+.log-in-block{
+    background-color: #FF9A14;
+    padding: 0.35em 0.7em;
+    border-radius: 0.2rem;
+    transition: 0.25s;
+}
+.log-in-block:hover{
+    transform: scale(1.04);
+    background-color: #FFFFFF;
+    color: #FF9A14;
+}
+.nickname-element{
+    font-size: 10px;
+}
+.ava-header{
+    width: 5em;
+    height: 5em;
+}
+.nickname-player-image{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.nickname-player-block{
+    cursor: pointer;
+
+}
+.logout-btn-container{
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+.logout-btn-text{
+    font-size: 0.75em;
+    color: rgba(0,0,0,0.5);
+    transition: 0.25s;
+    cursor: pointer;
+    padding: 0.25em 0.5em;
+}
+.logout-btn-text:hover{
+    color: rgba(0,0,0,1);
+}
+.logout-btn-block{
+    display: flex;
+    justify-content: center;
+}
+.nickname-text{
+    font-size: 0.75em;
+    color: #050505;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.1em;
+}
+.nickname-btn-profile-block{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.nickname-menu-img-image{
+    height: 3.5em;
+    width: 3.5em;
+    margin-left: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: 0.25s;
+}
+
+.icon-nickname-menu{
+    fill: #FF9A14;
+}
+.nickname-player-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.rotate-nickname-menu-img-image{
+    transform: rotate(-180deg);
+}
+@media (max-width: 1920px) {
+    header{
+        font-size: 1.5vw;
+    }
+    .nickname-element{
+        font-size: 8px;
+    }
+    .icon-svg-nickname{
+        right: calc(0.5em + 23px);
+    }
+}
+@media (max-width: 1440px) {
+    .nickname-element{
+        font-size: 6px;
+    }
+}
+@media (max-width: 1366px) {
+    header{
+        font-size: 1.6vw;
+    }
+}
+@media (max-width: 1024px) {
+    header{
+        font-size: 1.92vw;
+    }
+    .container-header-elements{
+        padding: 0.6em 4em;
+    }
+    .nickname-container{
+        right: 3.5em;
+    }
+}
+@media (max-width: 991px) {
+    header{
+        font-size: 2.2vw;
+    }
+    .menu-elemet{
+        background-color: #050505;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.6em 8em;
+        justify-content: space-around;
+    }
+    .container-header-elements{
+        padding: 0.6em 8em;
+    }
+    .nickname-container{
+        right: 7.5em;
+    }
+}
+@media (max-width: 767px) {
+    header{
+        font-size: 3vw;
+    }
+    .menu-text{
+        display: none;
+    }
+    .menu-block{
+        margin: 0;
+    }
+    .menu-elemet{
+        padding: 0.2em 9em;
+    }
+    .container-header-elements{
+        padding: 0.4em 2em;
+    }
+    .menu-image{
+        margin: 0;
+        height: 1.2em;
+        width: 1.2em;
+    }
+    .link-block{
+        padding: 0.2em 0.6em;
+    }
+    .nickname-container{
+        right: 1em;
+    }
+}
+@media (max-width: 623px) {
+    header{
+        font-size: 3.5vw;
+    }
+    .menu-elemet{
+        padding: 0.2em 6.5em;
+    }
+}
+@media (max-width: 479px) {
+    header{
+        font-size: 4.6vw;
+    }
+    .menu-elemet{
+        padding: 0.2em 4em;
+    }
+    .log-in-text{
+        text-transform: capitalize;
+    }
+    .log-in-block{
+        padding: 0.3em 0.6em;
+        font-size: 0.7em;
+    }
+}
+@media (max-width: 375px) {
+    .nickname-text {
+        font-size: 0.65em;
+    }
+    header{
+        font-size: 6vw;
+    }
+    .menu-elemet{
+        padding: 0.2em 1.5em;
+    }
+}
+@media (max-width: 320px) {
+    .nickname-text {
+        font-size: 0.62em;
+    }
+    header{
+        font-size: 6.6vw;
+    }
+    .container-header-elements{
+        padding: 0.4em 1em;
+    }
+    .nickname-container{
+        right: 0.5em;
+    }
+}
+
+.header-page-see{
+    display: none;
+}
+.header-page-see-animation-fixed{
+    display: block;
+}
+.header-page-animation-fixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 10;
+    animation: animationFixed 0.5s forwards;
+}
+@keyframes animationFixed {
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 0;
+    }
+}

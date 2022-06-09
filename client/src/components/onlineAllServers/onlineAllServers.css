@@ -1,0 +1,125 @@
+
+.online-page{
+    font-size: 1.6vw;
+    font-family: Jost;
+    padding: 1rem 0;
+}
+.online-text-block{
+    padding-bottom: 1.2em;
+}
+.online-cont-all{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.online-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #050505;
+    padding: 0.5em 1em;
+}
+.online-container-one{
+    border-radius: 0rem 0.4rem 0.4rem 0rem;
+}
+.online-container-two{
+    border-radius: 0.4rem 0rem 0rem 0.4rem;
+}
+.online-number{
+    color: #FF9A14;
+    padding: 0 0.25em;
+}
+.online-text{
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.online-cont-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    width: 100%;
+}
+
+@media (max-width: 1920px) {
+    .online-page{
+        font-size: 1.82vw;
+    }
+}
+@media (max-width: 1440px) {
+    .online-page{
+        font-size: 2vw;
+        font-family: Jost;
+        padding-top: 0.75em;
+    }
+    .online-text-block{
+        padding-bottom: 0.9em;
+    }
+}
+@media (max-width: 1366px) {
+    .online-page{
+        font-size: 2.08vw;
+    }
+}
+@media (max-width: 1024px) {
+    .online-page{
+        font-size: 2.35vw;
+    }
+}
+@media (max-width: 991px) {
+    .online-text{
+        display: grid;
+        grid-template-areas: 'online-text online-text' 'number-text players-text';
+        justify-content: center;
+    }
+    .text-on{
+        grid-area: online-text;
+    }
+    .text-pl{
+        grid-area: players-text;
+    }
+    .online-number{
+        grid-area: number-text;
+        text-align: right;
+    }
+    .online-page{
+        font-size: 2.56vw;
+    }
+}
+@media (max-width: 767px) {
+    .online-page{
+        font-size: 2.6vw;
+    }
+}
+@media (max-width: 623px) {
+    .online-page{
+        font-size: 3.25vw;
+    }
+}
+@media (max-width: 479px) {
+    .online-page{
+        font-size: 4vw;
+    }
+    .online-cont-cont{
+        grid-template-columns: 1fr;
+        grid-column-gap: 0em;
+        grid-row-gap: 1em;
+        padding: 0 1em;
+    }
+    .online-container{
+        border-radius: 0.8rem;
+    }
+}
+@media (max-width: 375px) {
+    .online-page{
+        font-size: 5vw;
+    }
+}
+@media (max-width: 320px) {
+    .online-page{
+        font-size: 5.5vw;
+    }
+}
+/* Выше страница с онлайном! */
